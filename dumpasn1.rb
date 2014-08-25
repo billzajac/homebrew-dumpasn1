@@ -18,7 +18,7 @@ class Dumpasn1 < Formula
     # Remove unrecognized options if warned by configure
     system "cc -o dumpasn1 dumpasn1.c"
     bin.install 'dumpasn1'
-    etc.install 'dumpasn1.cfg'
+    bin.install 'dumpasn1.cfg'
 
     # system "cmake", ".", *std_cmake_args
     # system "make", "install" # if this fails, try separate make/make install steps
